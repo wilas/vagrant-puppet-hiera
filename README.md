@@ -1,6 +1,6 @@
 # Description
 
-Playing with puppet hiera and vagrant. Look into basic_package module.
+Playing with puppet hiera and vagrant. Creating Hierarchies - package managment as an example: look into basic_package module.
 
 ## VM description
  
