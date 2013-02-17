@@ -1,0 +1,9 @@
+---
+:hierarchy:
+    - %{::osfamily}
+    - vagrant_%{::is_vagrant}
+    - common
+:backends:
+    - yaml
+:yaml:
+    :datadir: 'hieradata'
