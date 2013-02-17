@@ -22,6 +22,7 @@ Playing with puppet hiera and vagrant. Creating Hierarchies - package managment 
 
  - hiera: http://docs.puppetlabs.com/hiera/1
  - using hiera: https://puppetlabs.com/blog/first-look-installing-and-using-hiera/
+ - !!! configuration variables and hiera: http://www.craigdunn.org/2011/10/puppet-configuration-variables-and-hiera/
  - other puppet links: https://github.com/wilas/vagrant-puppet-flat
 
 ## Copyright and license
