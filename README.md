@@ -1,6 +1,6 @@
 # Description
 
-Playing with puppet hiera and vagrant.
+Playing with puppet hiera and vagrant. Look into basic_package module.
 
 ## VM description
  
