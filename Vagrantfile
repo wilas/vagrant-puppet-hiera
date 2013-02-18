@@ -2,8 +2,6 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-
-  config.vm.define :pie do |config|
     vm_name= "pie"
     config.vm.box = "SL64_box"
     config.vm.host_name = "#{vm_name}.farm"
@@ -25,5 +23,4 @@ Vagrant::Config.run do |config|
             "is_vagrant" => true,
         }
     end
-  end
 end
