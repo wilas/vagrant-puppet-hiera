@@ -1,6 +1,7 @@
 ---
 :hierarchy:
-    - %{::osfamily}
+    - %{::osfamily}-pkgs
+    - %{::osfamily}-repos
     - vagrant_%{::is_vagrant}
     - common
 :backends:
