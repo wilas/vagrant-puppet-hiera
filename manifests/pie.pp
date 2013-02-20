@@ -2,10 +2,10 @@ stage { "base": before  => Stage["main"] }
 stage { "last": require => Stage["main"] }
 
 # basic config
-class { "install_repos": stage => "base" }
+class { "yum_repos": stage     => "base" }
 class { "basic_package": stage => "base" }
 class { "user::root": stage    => "base" }
-Class["install_repos"] -> Class["basic_package"] -> Class["user::root"]
+Class["yum_repos"] -> Class["basic_package"] -> Class["user::root"]
 
 # firewall manage
 service { "iptables":

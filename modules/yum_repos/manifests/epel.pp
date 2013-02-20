@@ -1,11 +1,11 @@
-class install_repos::epel {
+class yum_repos::epel {
 
     file { "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6":
         ensure => file,
         owner  => "root",
         group  => "root",
         mode   => "0444",
-        source => "puppet:///modules/install_repos/RPM-GPG-KEY-EPEL-6",
+        source => "puppet:///modules/yum_repos/RPM-GPG-KEY-EPEL-6",
     }
 
     yumrepo { 

@@ -1,11 +1,11 @@
-class install_repos::puppetlabs {
+class yum_repos::puppetlabs {
 
     file { "/etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs":
         ensure => file,
         owner  => "root",
         group  => "root",
         mode   => "0444",
-        source => "puppet:///modules/install_repos/RPM-GPG-KEY-puppetlabs",
+        source => "puppet:///modules/yum_repos/RPM-GPG-KEY-puppetlabs",
     }
 
     yumrepo { 
