@@ -3,7 +3,7 @@
 
 Vagrant::Config.run do |config|
     vm_name= "pie"
-    config.vm.box = "SL64_box"
+    config.vm.box = "SL6"
     config.vm.host_name = "#{vm_name}.farm"
     config.vm.customize ["modifyvm", :id, "--memory", "512", "--name", "#{vm_name}"]
 
