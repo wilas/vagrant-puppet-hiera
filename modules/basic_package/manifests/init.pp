@@ -4,7 +4,7 @@ class basic_package {
     package { $basic_pkg:
         ensure => installed,
     }
-   
+
     $basic_erase_pkg = hiera_array('basic_erase_package', undef)
     if $basic_erase_pkg {
         package { $basic_erase_pkg:
