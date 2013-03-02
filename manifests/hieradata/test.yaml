@@ -1,0 +1,3 @@
+---
+classes : 'hiera_example'
+#hiera_info : 'Hello Hiera'

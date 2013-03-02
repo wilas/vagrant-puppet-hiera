@@ -1,4 +1,5 @@
 ---
+classes : 'yum_repos'
 # bool - enable/disable administering epel repos, default disable
 # 1/0 - enable/disable choosen repo, default value is 0
 adm_epel_repos : yes

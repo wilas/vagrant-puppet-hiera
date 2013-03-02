@@ -1,0 +1,6 @@
+---
+classes : 
+    - 'user::root'
+    - 'basic_firewall'
+basic_firewall::iptables_ensure : 'running'
+basic_firewall::iptables_enable : true

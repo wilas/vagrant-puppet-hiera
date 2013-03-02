@@ -2,7 +2,8 @@
 :hierarchy:
     - %{::osfamily}-pkgs
     - %{::osfamily}-repos
-    - vagrant_%{::is_vagrant}
+    - %{::vm_type}
+    - %{::vm_env}
     - common
 :backends:
     - yaml

@@ -1,0 +1,4 @@
+---
+classes : 'hiera_example'
+env_message : 'staging node'
+hiera_info : 'Hello Hiera'

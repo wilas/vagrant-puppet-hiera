@@ -1,20 +1,22 @@
 # Description
 
-Playing with puppet hiera and vagrant. Creating Hierarchies - package managment as an example: look into basic_package module.
+Playing with puppet hiera and vagrant. Creating hierarchies, managing multiple environments.
 
 ## VM description
  
  - OS: Scientific linux 6
- - simple vm: pie.farm
+ - simple vms: pie_{prod,stage,test}.farm
 
 ## Howto
 
- - create SL6 using [veewee-boxarium](https://github.com/wilas/veewee-boxarium)
+ - create SL6 box using [veewee-boxarium](https://github.com/wilas/veewee-boxarium)
  - copy ssh_keys from [ssh-gerwazy](https://github.com/wilas/ssh-gerwazy)
 
 ```
     vagrant up
-    ssh root@77.77.77.55 #pie
+    ssh root@77.77.77.55 #pie_prod
+    ssh root@77.77.77.56 #pie_stage
+    ssh root@77.77.77.57 #pie_test
     vagrant destroy
 ```
 
@@ -23,7 +25,13 @@ Playing with puppet hiera and vagrant. Creating Hierarchies - package managment 
  - hiera: http://docs.puppetlabs.com/hiera/1
  - using hiera: https://puppetlabs.com/blog/first-look-installing-and-using-hiera/
  - !!! configuration variables and hiera: http://www.craigdunn.org/2011/10/puppet-configuration-variables-and-hiera/
+ - puppet backend - hiera: http://www.devco.net/archives/2011/06/11/puppet_backend_for_hiera_part_2.php
+ - puppet conf. environments (auth.conf on master): http://docs.puppetlabs.com/guides/environment.html
+ - why hiera?: https://puppetlabs.com/blog/the-problem-with-separating-data-from-puppet-code/
  - other puppet links: https://github.com/wilas/vagrant-puppet-flat
+ - env. + git: "Each environment can thus be a branch of the main environment."
+ - multiple backends: http://projects.puppetlabs.com/issues/13954
+
 
 ## Copyright and license
 
