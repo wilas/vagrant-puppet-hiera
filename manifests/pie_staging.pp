@@ -1,8 +1,8 @@
 # Error: Cannot reassign variable environment at
 # check it also with puppet master and node declaration
-#$environment = 'test'
+#$environment = 'staging'
 
-$vm_env = 'test'
+$vm_env = 'staging'
 
 # Include classes - search for classes in *.yaml/*.json files
 hiera_include('classes')

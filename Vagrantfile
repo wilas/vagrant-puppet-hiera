@@ -25,8 +25,8 @@ Vagrant::Config.run do |config|
         }
     end
   end
-  config.vm.define :pie_stage do |node_conf|
-    vm_name= "pie_stage"
+  config.vm.define :pie_staging do |node_conf|
+    vm_name= "pie_staging"
     node_conf.vm.box = "SL6"
     node_conf.vm.host_name = "#{vm_name}.farm"
     node_conf.vm.customize ["modifyvm", :id, "--memory", "512", "--name", "#{vm_name}"]
@@ -37,7 +37,7 @@ Vagrant::Config.run do |config|
     node_conf.vm.provision :puppet do |puppet|
         puppet.options = "--hiera_config hiera.yaml"
         puppet.manifests_path = "manifests"
-        puppet.manifest_file  = "pie_stage.pp"
+        puppet.manifest_file  = "pie_staging.pp"
         puppet.module_path = "modules"
 
         # custom facts provided to Puppet
@@ -48,8 +48,8 @@ Vagrant::Config.run do |config|
         }
     end
   end
-  config.vm.define :pie_test do |node_conf|
-    vm_name= "pie_test"
+  config.vm.define :pie_dev do |node_conf|
+    vm_name= "pie_dev"
     node_conf.vm.box = "SL6"
     node_conf.vm.host_name = "#{vm_name}.farm"
     node_conf.vm.customize ["modifyvm", :id, "--memory", "512", "--name", "#{vm_name}"]
@@ -60,13 +60,13 @@ Vagrant::Config.run do |config|
     node_conf.vm.provision :puppet do |puppet|
         puppet.options = "--hiera_config hiera.yaml"
         puppet.manifests_path = "manifests"
-        puppet.manifest_file  = "pie_test.pp"
+        puppet.manifest_file  = "pie_dev.pp"
         puppet.module_path = "modules"
 
         # custom facts provided to Puppet
         # turn on/off vm_type variable to see diffrent behaviour
         puppet.facter = {
-            #"environment" => "test",
+            #"environment" => "dev",
             "vm_type" => "vagrant",
         }
     end
