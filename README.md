@@ -31,6 +31,7 @@ Playing with puppet hiera and vagrant. Creating hierarchies, managing multiple e
  - other puppet links: https://github.com/wilas/vagrant-puppet-flat
  - env. + git: "Each environment can thus be a branch of the main environment."
  - multiple backends: http://projects.puppetlabs.com/issues/13954
+ - do you think it would be possible to retrieve 'env' from hiera and populate it as a fact before it compiles the catalogue?: https://groups.google.com/forum/?fromgroups=#!topic/puppet-users/r1XqwwF0f3c
 
 
 ## Copyright and license
