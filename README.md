@@ -5,7 +5,7 @@ Playing with puppet hiera and vagrant. Creating hierarchies, managing multiple e
 ## VM description
  
  - OS: Scientific linux 6
- - simple vms: pie_{prod,stage,test}.farm
+ - simple vms: pie_{prod,staging,dev}.farm
 
 ## Howto
 
@@ -15,8 +15,8 @@ Playing with puppet hiera and vagrant. Creating hierarchies, managing multiple e
 ```
     vagrant up
     ssh root@77.77.77.55 #pie_prod
-    ssh root@77.77.77.56 #pie_stage
-    ssh root@77.77.77.57 #pie_test
+    ssh root@77.77.77.56 #pie_staging
+    ssh root@77.77.77.57 #pie_dev
     vagrant destroy
 ```
 
