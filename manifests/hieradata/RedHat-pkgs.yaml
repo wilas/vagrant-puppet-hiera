@@ -1,5 +1,6 @@
 ---
-classes : 'basic_package'
+classes :
+    - 'basic_package'
 basic_package : - 'wget'
                 - 'openssh-clients'
                 - 'mc'
@@ -11,4 +12,4 @@ basic_package : - 'wget'
                 - 'ruby-devel'
                 - 'rubygems'
 basic_erase_package : -
-gem_package : - 'puppet-lint'
+gem_package : -

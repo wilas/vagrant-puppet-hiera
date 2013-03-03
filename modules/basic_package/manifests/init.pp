@@ -25,8 +25,8 @@ class basic_package {
     if $gem_pkg {
         package { $gem_pkg:
             ensure   => installed,
-            provider => "gem",
-            require  => Package["rubygems"],
+            provider => 'gem',
+            require  => Package['rubygems'],
         }
     }
 }

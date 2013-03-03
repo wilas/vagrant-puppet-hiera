@@ -1,4 +1,5 @@
 ---
-classes : 'hiera_example'
+classes :
+    - 'hiera_example'
 env_message : 'production node'
 hiera_info : 'Hello Hiera'
