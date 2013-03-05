@@ -23,15 +23,17 @@ Playing with puppet hiera and vagrant. Creating hierarchies, managing multiple e
 ## Bibliography
 
  - hiera: http://docs.puppetlabs.com/hiera/1
- - using hiera: https://puppetlabs.com/blog/first-look-installing-and-using-hiera/
+ - hiera: https://puppetlabs.com/blog/first-look-installing-and-using-hiera/
+ - why hiera?: https://puppetlabs.com/blog/the-problem-with-separating-data-from-puppet-code/
  - !!! configuration variables and hiera: http://www.craigdunn.org/2011/10/puppet-configuration-variables-and-hiera/
  - puppet backend - hiera: http://www.devco.net/archives/2011/06/11/puppet_backend_for_hiera_part_2.php
+ - multiple backends: http://projects.puppetlabs.com/issues/13954
  - puppet conf. environments (auth.conf on master): http://docs.puppetlabs.com/guides/environment.html
- - why hiera?: https://puppetlabs.com/blog/the-problem-with-separating-data-from-puppet-code/
+ - do you think it would be possible to retrieve 'env' from hiera and populate it as a fact before it compiles the catalogue?: https://groups.google.com/forum/?fromgroups=#!topic/puppet-users/r1XqwwF0f3c
+ - use puppet modules, worth using commands: https://github.com/wilas/vagrant-puppet-modules
+ - vagrant + puppet_server: https://github.com/wilas/puppet-soup
  - other puppet links: https://github.com/wilas/vagrant-puppet-flat
  - env. + git: "Each environment can thus be a branch of the main environment."
- - multiple backends: http://projects.puppetlabs.com/issues/13954
- - do you think it would be possible to retrieve 'env' from hiera and populate it as a fact before it compiles the catalogue?: https://groups.google.com/forum/?fromgroups=#!topic/puppet-users/r1XqwwF0f3c
 
 
 ## Copyright and license
